@@ -1,1 +1,30 @@
 /* Los estilos de tu proyecto */
+
+p, h2{
+    color: #fff;
+}
+.cover{
+    background-size: cover;
+}
+.one{
+    background-image: url("../assets/images/taxi.jpg"); 
+    /* height: 650px; */
+    height: 550px;
+    background-position: 0% 92%;
+    
+}
+.two{
+    background-color: #F7B617;        
+}
+.three{
+    background-image: url(../assets/images/conduce.jpg);
+    height: 350px;
+    /* background-position: center 50%; */
+    background-position: auto;
+}
+.box{
+    /* height: 300px; */
+    width: 200px;
+    background-color: #f7b617; 
+    /* opacity: 0.5; */
+}
