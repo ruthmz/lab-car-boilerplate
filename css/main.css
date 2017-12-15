@@ -1,30 +1,63 @@
 /* Los estilos de tu proyecto */
-
+*{
+    font-family: 'Raleway', sans-serif;
+}
 p, h2{
     color: #fff;
+}
+h2{
+    font-weight: bold;
+    display: inline-block;
 }
 .cover{
     background-size: cover;
 }
+p .btn{
+    font-weight: bold;
+}
+.container {
+    padding: 0;
+}
 .one{
     background-image: url("../assets/images/taxi.jpg"); 
     /* height: 650px; */
-    height: 550px;
-    background-position: 0% 92%;
-    
+    height: 100vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-top: 70px;
 }
 .two{
-    background-color: #F7B617;        
+    background-color: #F7B617;  
+    height: 100vh;      
 }
 .three{
     background-image: url(../assets/images/conduce.jpg);
-    height: 350px;
+    height: 100vh;
     /* background-position: center 50%; */
     background-position: auto;
 }
 .box{
     /* height: 300px; */
-    width: 200px;
+    width: 70%;
     background-color: #f7b617; 
     /* opacity: 0.5; */
+}
+/* Desktop styles */
+.large{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .box{
+        width: 50vh;
+    }
+
+}
+@media (min-width: 992px) {
+    .large{
+        display: block;
+    }
+    .small{
+        display: none;
+    }
 }
