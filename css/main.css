@@ -1,6 +1,9 @@
 /* Los estilos de tu proyecto */
 *{
     font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 p, h2{
     color: #fff;
@@ -12,19 +15,14 @@ h2{
 .cover{
     background-size: cover;
 }
-p .btn{
-    font-weight: bold;
-}
-.container {
-    padding: 0;
-}
+
 .one{
     background-image: url("../assets/images/taxi.jpg"); 
     /* height: 650px; */
     height: 100vh;
     background-position: bottom;
     background-repeat: no-repeat;
-    padding-top: 70px;
+    padding-top: 50px;  
 }
 .two{
     background-color: #F7B617;  
@@ -33,31 +31,111 @@ p .btn{
 .three{
     background-image: url(../assets/images/conduce.jpg);
     height: 100vh;
-    /* background-position: center 50%; */
-    background-position: auto;
+    background-position: center 50%;
 }
-.box{
-    /* height: 300px; */
-    width: 70%;
+.labcar{
+    height: 20px;   
+}
+.info-box{
+    width: 50vh;
     background-color: #f7b617; 
-    /* opacity: 0.5; */
+    padding: 2em 3.5em 2em 2.5em;
+    display: flex;
+    transform: translateY(50%)    
+}
+.position{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.position-app{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.text-align{
+    text-align: center;
+}
+.bold{
+    font-weight: bold;
+    font-size: 1.2em;
+} 
+.tittle{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.title-bg{
+    font-size: 1.5em;
+}
+.text{
+    font-size: 1.4em;
+}
+.btn{
+    border: none;
+    font-weight: bold;
+    background-color: #fff;
+}
+.yellow-btn{
+    background: #f7b617;
+    border: none;
+} 
+.rounded{
+    border-radius: 5px;
+    width: 80%;
+    background: none;    
+    padding: 7px;
+    border: 1px solid white;
+    margin-left: 1em;
+    color: #fff;   
+}
+
+input::placeholder {
+    color: #fff;;
+  }
+footer{
+    background: #2B2B2B;
 }
 /* Desktop styles */
 .large{
     display: none;
 }
+/* Mobile styles */
 
-@media (min-width: 768px) {
+.black-box {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+}
+.box-app {
+    border: 1px solid #fff;
+    height: 80vh;
+    margin-top: 3em;
+    padding: 1em;
+    /* margin-bottom: 1em; */
+    
+}
+
+
+@media (max-width: 767px) {
+    .info-desktop {
+       display: none;
+    }
+    .title-bg{
+        line-height: 1em;
+    }
     .box{
-        width: 50vh;
+        transform: translateY(50%)  
     }
 
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .large{
-        display: block;
+        display: block
     }
-    .small{
+    .box{
+        width: 40vh;
+    }
+    .info-mobile{
         display: none;
     }
 }

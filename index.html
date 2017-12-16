@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <title>Lab Car</title>
 </head>
 <body>
      <!--Navbar-->
      <nav class="navbar navbar-default navbar-fixed-top">
-         <div class="container-fluid">
+         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand pull-right" href="#">
                 <img alt="Brand" src="assets/images/logoForma.png">
@@ -41,18 +42,21 @@
                     </li>
                 </ul>
             </div>
+        
          </div>       
      </nav>
-     <section class="cover one">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-8" >
-                    <div class="box pull-right">
-                        <div class="small">
-                            <p>Comienza a viajar <br> con <img src="assets/images/logoBlanco.png" alt=""></p>
-                            <p><a class="btn btn-default btn-sm" role="button">Descarga el app</a></p>
+     <section class="container-fluid">
+        <div class="row">
+            <div class="cover one">
+                <div class="position">
+                    <div class="info-box">
+                        <div class="info-mobile">
+                            <p class="title-bg bold">Comienza a viajar</p>
+                            <span><p class="title-bg bold">con <img class="labcar" src="assets/images/logoBlanco.png" alt=""></p>
+                            <p><a class="btn btn-default btn-lg" role="button">Descarga el app</a></p>
+                        </span>
                         </div>
-                        <div class="large">
+                        <div class="info-desktop">
                             <h2>Disfruta del viaje</h2>
                             <h2>Eres dueño de tu tiempo</h2>
                             <p>Viaja con <br> con <img src="assets/images/logoBlanco.png" alt=""></p>
@@ -63,59 +67,114 @@
             </div>
         </div>
      </section>
-     <section class="container">
+     <section class="container-fluid">
          <div class="row">
-            <div class="col-xs-12">
-                <div class="row cover two">
-                    <img src="assets/images/iPhone6Plus.png" alt="">
-                    <div class=" box pull-right">
-                            <!-- <h2>Conduce cuando quieras</h2>
-                            <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p> -->
+            <div class="cover two">
+                <div class="col-xs-12">
+                    <figure class="box-app">
+                        <p class="text-align tittle">La nueva app</p>      
+                        <img class="img-responsive" src="assets/images/iPhone6Plus.png" alt="">
+                    </figure>
+                    <!-- <div class=" box pull-right">
                             <h2>La nueva app</h2>
                             <p>Llega a tu destino aún más rapido</p>
-                    </div>
-                </div>
-            </div>
-         </div>
-    </section>
-    <section  class="container">
-        <div class="row">                    
-            <div class="cover three">
-                <div class="col-xs-12">
-                    <div class=" box pull-right">
                             <h2>Descarga la nueva app</h2>
                             <p>La versión actualizada de LabCar esta llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
-                            <p><a href="#" class="btn btn-primary" role="button">Conviértete en conductor</a></p>
+                    </div> -->
+                </div>
+                <div class="col-xs-12">
+                <br>
+                <p class="bold" >Llega a tu destino aún más rapido</p>
+                </div> 
+            </div>
+         </div>
+     </section>
+     <section class="container-fluid">
+        <div class="row">                    
+            <div class="cover three ">
+                <div class="col-xs-12 black-box">
+                    <div class="box pull-right">
+                            <h2>Conduce cuando quieras</h2>
+                            <p class="text">LabCar es una opción flexible para alcanzar tus metas financieras.</p>                     
+                            <p><a href="#" class="btn btn-lg btn-primary yellow-btn" role="button">Conviértete en conductor</a></p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="container">
-        <div class="row">
-            <div class="cover two">  
-                <div class="col-xs-12">
+     </section>
+     <section class="container-fluid">
+        <div class="row cover two">
+            <div class= "col-xs-12">  
+                <div >
                     <h2>Tarifas</h2>
                     <p>Consulta las tarifas LabCar aquí</p>
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Ingrese su punto de partida">
+                    <div class="line" >
+                        <span>
+                           <img src="assets/images/shape.png" alt="">
+                        </span>
+                        <input class="rounded" type="text"  placeholder="Ingrese su punto de partida">    
                     </div>
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Ingrese su destino">
+                    <br>
+                    <div class="line" >
+                        <span>
+                            <img src="assets/images/shape2.png" alt="">
+                        </span>
+                        <input class="rounded" type="text" placeholder="Ingrese su destino">
                     </div>
-                    <p><a href="#" class="btn btn-default btn-sm" role="button">¡TRAZA TU RUTA!</a></p>
-                    <!-- <div class="thumbnail ">
+                    <br>
+                    <p class="text-align"><a href="#" class="btn btn-default btn-sm" role="button">¡TRAZA TU RUTA!</a></p>
+                    <div class="media img-thumbnail">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31208.33082674153!2d-77.02607436190495!3d-12.10932160246326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8033db388e9%3A0x9a8fd885ed185198!2sComunal+Coworking+Benavides+1180!5e0!3m2!1ses-419!2spe!4v1513198845151" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div> -->
+                    </div>
                     
                 </div>
             </div>   
         </div>
-    </section>
+     </section>
 
-    <footer>
+     <footer>
+         <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- <h3> Contact </h3> -->
+                        <a href="#"><img alt="Brand" src="assets/images/logoBlanco.png"></a>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="nav navbar-nav"> 
 
-    </footer>
+                        <li> <a href="#"> Viaja </a> </li>
+                        <li> <a href="#"> Conduce </a> </li>
+                        <li> <a href="#"> Ciudades </a> </li>
+                        <li> <a href="#"> Entregas </a> </li>
+                        <li> <a href="#"> ¿Cómo funciona? </a> </li>
+                        <li> <a href="#"> Países </a> </li>
+                        <li> <a href="#"> Seguridad </a> </li>  
+                    </ul>
+                </div>
+
+                <div class="col-xs-6">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fa fa-apple" aria-hidden="true"></i>
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                
+                    <div class="navbar-brand">
+                        <a class href="#">
+                          <img alt="Brand" src="assets/images/googleplay.png">
+                        </a>  
+                        
+                        <div class="navbar-brand"></div>
+                        <a  href="#">
+                          <img alt="Brand" src="assets/images/appstore.png">
+                        </a>
+                    </div>
+                    
+                 
+                </div>
+    
+
+     </footer>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
