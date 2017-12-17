@@ -5,28 +5,34 @@
     margin: 0;
     box-sizing: border-box;
 }
-p, h2{
+footer li a, p, h2{
     color: #fff;
 }
 h2{
     font-weight: bold;
-    display: inline-block;
 }
 .cover{
     background-size: cover;
 }
-
+.fa{
+    color: #fff;
+    margin-right: 1em;
+    margin-bottom: 2em;
+}
+.fa:first-of-type{
+    /* margin-left: 1em; */
+}
 .one{
     background-image: url("../assets/images/taxi.jpg"); 
-    /* height: 650px; */
     height: 100vh;
     background-position: bottom;
     background-repeat: no-repeat;
-    padding-top: 50px;  
 }
 .two{
-    background-color: #F7B617;  
-    height: 100vh;      
+    background-color: #F7B617; 
+    height: 100vh; 
+    /* height: max-content; */
+
 }
 .three{
     background-image: url(../assets/images/conduce.jpg);
@@ -53,17 +59,17 @@ h2{
     justify-content: center;
     /* align-items: center; */
 }
-
 .text-align{
     text-align: center;
 }
 .bold{
     font-weight: bold;
-    font-size: 1.2em;
+    color:#fff;
 } 
 .tittle{
     font-size: 1.5em;
     font-weight: bold;
+    color: #fff;
 }
 .title-bg{
     font-size: 1.5em;
@@ -95,6 +101,7 @@ input::placeholder {
   }
 footer{
     background: #2B2B2B;
+    padding-top: 1em;
 }
 /* Desktop styles */
 .large{
@@ -105,16 +112,29 @@ footer{
 .black-box {
     background-color: rgba(0, 0, 0, 0.4);
     height: 100vh;
+    padding: 20% 5%;
 }
 .box-app {
     border: 1px solid #fff;
     height: 80vh;
     margin-top: 3em;
     padding: 1em;
-    /* margin-bottom: 1em; */
-    
+    /* margin-bottom: 1em; */ 
+}
+.app-logo{
+    margin-bottom: 2em;
 }
 
+.media{
+    border: 1px solid #fff;
+    padding: 1em;
+}
+.nav-style{
+    /* padding-bottom: 3em; */
+    background-color:#fff;
+    border: none;
+    outline: none;   
+}
 
 @media (max-width: 767px) {
     .info-desktop {
@@ -123,19 +143,82 @@ footer{
     .title-bg{
         line-height: 1em;
     }
-    .box{
-        transform: translateY(50%)  
+     /* MAIN-END */
+    .desktop-app{
+        display: none;
+    }
+    .map{
+        height: 50vh;
+        width: 90vw;
+        padding: 1em;
+        outline: 1px solid white;
+    }
+    .desktop-footer{
+        display: none;
     }
 
 }
 @media (min-width: 768px) {
-    .large{
-        display: block
-    }
-    .box{
-        width: 40vh;
-    }
+    /* MAIN */
     .info-mobile{
         display: none;
     }
+    .line::after,.line::before{
+        content:'';
+        width: 35%;
+        height:.1em;
+        background-color:#fff;
+        display: inline-block;
+        transform: translateY(-240%);
+        margin-right: .5em;
+        margin-left: .5em;
+    }
+    .info-box{
+        width: 70vh;
+        background-color: #f7b617; 
+        padding: 2em 3.5em 2em 2.5em;
+        display: flex;
+        transform: translateY(50%) 
+    } 
+    /* MAIN-END */
+    .mobile-app{
+        display: none;
+    }
+    .box-desktop{
+        border: 1px solid #fff;
+        border-left: none;
+        max-height: max-content;
+        max-width: 80vw;
+        margin-top: 8em;
+        padding: 2em;
+    }
+  
+
+    /* DRIVER */
+    .black-box{
+        max-width: max-content;
+    }
+    /* DRIVER-END */
+    /* .box{
+        width: 40vh;
+    } */
+    /* RATE */
+    .map{
+        width: 70vh;
+        height: 70vh;
+        padding: 1em;
+        outline: 1px solid white;
+    }
+    .rate-box{
+        margin-top: 6em;
+    }
+    /* RATE-END*/
+
+    
+    /* FOOTER */
+    .mobile-footer{
+        display: none;
+    }
+    
+
 }
