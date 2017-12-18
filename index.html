@@ -41,7 +41,7 @@
                             <a href="#about">Conduce</a>
                             </li>
                             <li>
-                            <a href="#contact">Inicia sesión</a>
+                            <a href="#contact" data-toggle="modal" data-target="#modal-login" >Inicia sesión</a>
                             </li>
                         </ul>
                     </div>
@@ -56,20 +56,24 @@
         <div class="row">
             <div class="cover one">
                 <div class="position">
-                    <div class="info-box">
-                        <div class="info-mobile">
-                            <p class="title-bg bold">Comienza a viajar</p>
-                            <span><p class="title-bg bold">con <img class="labcar" src="assets/images/logoBlanco.png" alt=""></p>
-                            <p><a class="btn btn-default btn-lg" role="button">Descarga el app</a></p>
-                            </span>
-                        </div>
-                        <div class="info-desktop">
-                            <h1 class="bold">Disfruta del viaje
-                                <br>Eres dueño de tu tiempo
-                            </h1>
+                    <div class="info-box col-xs-9 col-sm-5 col-md-6  hidden-md hidden-sm  hidden-lg">
+                        <div class="">
+                            <p class="title-big">Comienza a viajar <br> con <img class="labcar" src="assets/images/logoBlanco.png" alt=""></p>
                             <br>
-                            <p class="title-bg">Viaja con <img class="labcar" src="assets/images/logoBlanco.png" alt="LabCar"></p>
-                            <p><a class="btn btn-default btn-lg" role="button">REGISTRATE</a></p>
+                            <p><a class="btn btn-default btn-lg" role="button">Descarga el app</a></p>
+                        </div>
+                    </div>    
+                </div>    
+                        <!-- desktop info -->
+                <div class="position">
+                    <div class="info-desktop hidden-xs hidden-xm ">  
+                        <div class="">
+                            <p class="title-big">Disfruta del viaje
+                                <br>Eres dueño de tu tiempo
+                            </p>
+                            <br>
+                            <p class="title-sm">Viaja con <img class="labcar" src="assets/images/logoBlanco.png" alt="LabCar"></p>
+                            <p><a class="btn btn-default btn-lg" role="button" data-toggle="modal" data-target="#modal-register">REGISTRATE</a></p>
                             <br>
                             <p class="line">O bien</p>
                             <br>
@@ -87,29 +91,29 @@
      <!--SECTION APP-->
      <section class="container-fluid">
          <div class="row">
-             <div class="mobile-app">
-            <div class="cover two">
-                <div class="col-xs-12">
-                    <figure class="box-app">
-                        <p class="text-align tittle">La nueva app</p>      
-                        <img class="img-responsive" src="assets/images/iPhone6Plus.png" alt="Iphone6 Plus">
-                    </figure>
-                    <br>
-                </div>
-                <p class="bold title-bg" >Llega a tu destino aún más rapido</p>
-                </div> 
+            <div class="mobile-app hidden-md hidden-sm hidden-lg">
+                <div class="cover two">
+                    <div class="col-xs-12">
+                        <figure class="box-app">
+                            <p class="text-align title-big">La nueva app</p>      
+                            <img class="img-responsive" src="assets/images/iPhone6Plus.png" alt="Iphone6 Plus">
+                        </figure>
+                        <br>
                     </div>
-                 </div>
-            </div>
+                    <p class="bold title-sm" >Llega a tu destino aún más rapido</p>
+                    </div> 
+                        </div>
+                    </div>
+                </div>
             </div>    
          </div>
         <div class="row">
-            <div class="desktop-app cover two"> 
-                <div class="col-md-12 box-desktop">
-                    <figure class="col-md-5  col-md-offset-1 ">
+            <div class="desktop-app hidden-xs cover two"> 
+                <div class="box-desktop">
+                    <figure class="col-sm-6 col-md-6">
                         <img class="img-responsive" src="assets/images/iPhone6Plus.png" alt="Iphone6 Plus">
                     </figure>
-                    <div class="col-md-4">
+                    <div class="col-sm-6 col-md-6">
                         <h2>Descarga la nueva app</h2>
                         <p class="text">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido </p>
                         <br>
@@ -138,11 +142,11 @@
      <!--SECTION RATE-->
      <section class="container-fluid">
         <div class="row cover two">
-            <div class= "col-xs-12 col-md-4 col-md-offset-1"> 
+            <div class= "col-xs-12 col-sm-12  col-md-offset-1 col-md-4"> 
                 <div class="rate-box"> 
                     <h2>Tarifas</h2>
                     <br>
-                    <p class="title">Consulta las tarifas LabCar aquí</p>
+                    <p class="title-sm">Consulta las tarifas LabCar aquí</p>
                     <br>
                     <div>
                         <img src="assets/images/shape.png" alt="">
@@ -159,7 +163,7 @@
                     <br> 
                 </div>        
             </div>
-            <div class=" col-xs-12 col-md-offset-1 col-md-6">
+            <div class=" col-xs-12  col-sm-12 col-md-offset-1  col-md-5 text-align">
                 <div class="rate-box"> 
                     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31208.33082674153!2d-77.02607436190495!3d-12.10932160246326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8033db388e9%3A0x9a8fd885ed185198!2sComunal+Coworking+Benavides+1180!5e0!3m2!1ses-419!2spe!4v1513198845151"  style="border:0" allowfullscreen></iframe>
                 </div>    
@@ -251,9 +255,99 @@
             
     </footer>
     <!--FOOTER END-->
+    <!-- MODAL LOGIN -->
+    <div class="modal fade" id="modal-login" role="dialog">
+        <div class="modal-dialog">
+    <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                <div class="sign-form">
+                    <img class="profile-img" src="assets/images/login.png"
+                        alt="">
+                    <form class="form-signin">
+                        <div class="input-group">
+                                <span class="input-group-addon glyphicon glyphicon-user"></span>
+                                <input type="text" class="form-control" placeholder="Username">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-lock"></span>
+                            <input type="text" class="form-control" placeholder="Password">
+                        </div>
+                        <button class="btn btn-sm btn-primary yellow-btn">LOGING</button>
+                        <span class="password-text">Forgot Password?
+                            <p class="red">Click Here</p></span>
+                        
+                    </form>    
+                </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>            
+
+    <!-- MODAL REGISTER -->
+    <div class="modal fade" id="modal-register" role="dialog">
+        <div class="modal-dialog">
+    <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                <div class="register-form">
+                    <form class="form-register" action="">
+                        <button class="btn btn-old-count  btn-block">Ya tienes una cuenta?</button>
+                        <p class="uppercase"> o crea una cuenta nueva</p>
+
+                        <input type="text" class="form-control input-inline" placeholder="Nombre">
+                        <input type="text" class="form-control input-inline" placeholder="Apellido">
+
+                        <input type="text" class="form-control" placeholder="Correo Electrónico: ejemplo@correo.mx">
+                        <input type="text" class="form-control" placeholder="Teléfono">
+                        <input type="text" class="form-control" placeholder="Contraseña">
+                        <input type="text" class="form-control" placeholder="Ciudad">
+                        <input type="text" class="form-control" placeholder="(Opcional) Código de Invitación">
+                        <!-- <button class="btn btn-option btn-block dropdown-toggle" data-toggle="dropdown" >Cómo te enteraste de nosotros?
+                            <ul class="dropdown-menu">
+                                <li>Internet</a></li>
+                                <li>Recomendación</a></li>
+                                <li>Otros</li>
+                            </ul> -->
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle aria-haspopup="true" aria-expanded="true"" type="button" data-toggle="dropdown">
+                                ¡Cómo te enteraste de nosotros?
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="">Internet</a> </li>
+                                <li><a href="">Recomendación</a></li>
+                                <li><a href="">Otros</a></li>
+                            </ul>
+                        </div>    
+                            <!-- <span class="fa fa-chevron-down"></span> -->
+                        </button>
+                        <button class="btn  btn-info btn-block">Enviar</button>
+
+
+
+                    </form>
+                </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>            
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
 </body>
 </html>
