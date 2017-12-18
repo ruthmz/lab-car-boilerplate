@@ -1,10 +1,13 @@
 /* Los estilos de tu proyecto */
+
+/* Seteado */
 *{
     font-family: 'Raleway', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+/* General */
 footer li a, p, h2{
     color: #fff;
 }
@@ -14,59 +17,11 @@ h2{
 li{
     font-weight: bold;
 }
-.cover{
-    background-size: cover;
-}
+
 .fa{
     color: #fff;
     margin-right: 1em;
     margin-bottom: 2em;
-}
-
-.one{
-    background-image: url("../assets/images/taxi.jpg"); 
-    height: 90vh;
-    background-position: bottom;
-    background-repeat: no-repeat;
-}
-.two{
-    background-color: #F7B617; 
-    height: 100vh; 
-    padding: 2.7em 0 2.7em 0;
-    height: max-content;
-
-}
-.three{
-    background-image: url(../assets/images/conduce.jpg);
-    height: 100vh;
-    background-position: center 50%;
-}
-.labcar{
-    height: 20px;   
-}
-.info-box{
-    background-color: #f7b617; 
-    transform: translateY(60%);
-    width: 75vw;
-    /* margin-left: 5%; */
-    padding: 2em;
-} 
-.info-desktop{
-    max-width: 70vh;
-    background-color: #f7b617; 
-    padding: 2em 3.5em 2em 2em;
-    display: flex;
-    transform: translateY(25%) 
-} 
-.position{
-    display: flex;
-    justify-content: flex-end;
-    /* align-items: center; */
-}
-.position-app{
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
 }
 .text-align{
     text-align: center;
@@ -92,19 +47,52 @@ li{
     font-weight: bold;
     background-color: #fff;
 }
+/* Background */
+.cover{
+    background-size: cover;
+}
+.one{
+    background-image: url("../assets/images/taxi.jpg"); 
+    height: 90vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.two{
+    background-color: #F7B617; 
+    height: 100vh; 
+    padding: 2.7em 0 2.7em 0;
+    height: max-content;
+}
+.three{
+    background-image: url(../assets/images/conduce.jpg);
+    height: 100vh;
+    background-position: center 50%;
+}
+.labcar{
+    height: 20px;   
+}
+/* Main Section */
+.info-box{
+    background-color: #f7b617; 
+    transform: translateY(60%);
+    width: 75vw;
+    padding: 2em;
+} 
+.info-desktop{
+    max-width: 70vh;
+    background-color: #f7b617; 
+    padding: 2em 3.5em 2em 2em;
+    display: flex;
+    transform: translateY(25%) 
+} 
+.position{
+    display: flex;
+    justify-content: flex-end;
+}
 .yellow-btn{
     background: #f7b617;
     border: none;
 } 
-.rounded{
-    border-radius: 5px;
-    width: 80%;
-    background: none;    
-    padding: 7px;
-    border: 1px solid white;
-    margin-left: 1em;
-    color: #fff;   
-}
 
 input::placeholder {
     color: #fff;;
@@ -113,8 +101,8 @@ footer{
     background: #2B2B2B;
     padding-top: 1em;
 }
-/* Desktop styles */
-/* Mobile styles */
+
+/* Section app */
 
 .black-box {
     background-color: rgba(0, 0, 0, 0.4);
@@ -126,7 +114,6 @@ footer{
     height: 80vh;
     margin-top: 3em;
     padding: 1em;
-    /* margin-bottom: 1em; */ 
 }
 .app-logo{
     margin-bottom: 2em;
@@ -137,7 +124,6 @@ footer{
     padding: 1em;
 }
 .nav-style{
-    /* padding-bottom: 3em; */
     background-color:#fff;
     border: none;
     outline: none;   
@@ -158,14 +144,29 @@ footer{
     height: 80vh;
     max-height: 80%;
     max-width: 80vw;
-    /* margin-top: 8em; */
     padding: 2em;
 }
+/* Section rate */
 .map{
     width: 50vh;
     height: 40vh;
     padding: 1em;
     outline: 1px solid white;
+}
+.rounded{
+    border-radius: 5px;
+    width: 80%;
+    background: none;    
+    padding: 7px;
+    border: 1px solid white;
+    margin-left: 1em;
+    color: #fff;   
+}
+/* Footer */
+hr {
+    height: 1px;
+    color: #fff;
+    height: 1px;
 }
 /* modal login */
 
@@ -211,7 +212,6 @@ footer{
     margin-bottom: 0;
 }
 .modal-style{
-    /* padding: 0; */
     border-bottom: none;
 }
 .form-control {
@@ -234,9 +234,6 @@ footer{
 }
 
 @media (min-width: 768px) {
-
-
-     /* MAIN-END */
 
 }
 @media (min-width: 992px) {
