@@ -167,47 +167,100 @@ footer{
     padding: 1em;
     outline: 1px solid white;
 }
+/* modal login */
+
+.form-login {
+    background-color: #F5F5F5;
+    padding: 1em;
+    margin: 2em 6em 6em 6em;
+    border-radius: 5px;
+}
+.modal-login{
+    background-color: #08AC9D;
+}
+.avatar-img{
+    width: 25%;
+    transform: translateX(140%)
+}
+.input-group{
+    margin-bottom: 2em;
+}
+
+/* modal register */
+.btn-register{
+    background-color: black;
+    color: #fff;
+}
+.btn-register:hover{
+    color:#f7b617;
+}
+/* modal driver */
+#modal-driver p{
+    color: #000;
+    margin: .5em 0;  
+}
+.modal-background{
+    background-color: #A9A9A9;
+    font-weight: bold;  
+}
+.info-modal {
+    color: #6b6b6b;
+    font-weight: 400;
+    font-size: 0.9em;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+.modal-style{
+    /* padding: 0; */
+    border-bottom: none;
+}
+.form-control {
+    margin-bottom: 1em;
+}
+.info-email {
+    font-size: 0.9em;
+    padding-top: 0;    
+}
+.btn-send{
+    margin: 1em 0;
+    background-color: #5BC0DE;
+}
+.form-register{
+    padding: 1.5em;
+}
+.black{
+    color: #000;
+    margin-top: 1em;
+}
 
 @media (min-width: 768px) {
 
 
      /* MAIN-END */
 
-        
-    .desktop-footer{
-        display: none;
-    }
-
 }
 @media (min-width: 992px) {
     /* MAIN */
-
-    /* MAIN-END */
-
-  
-
     /* DRIVER */
     .black-box{
         max-width: max-content;
     }
     /* DRIVER-END */
-    /* .box{
-        width: 40vh;
-    } */
-    /* RATE */
+
     .map{
         width: 70vh;
         height: 70vh;
         padding: 1em;
         outline: 1px solid white;
     }
-    .rate-box{
-        /* margin-top: 6em; */
-    }
     /* RATE-END*/
-
     
     /* FOOTER */
 
-
+    .footer-icons {
+        margin-top: 19em;
+    }
+    .app-group{
+        margin-top: 10em;
+    }
 }
